@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/zsh
 
 echo "#! /bin/bash" > ~/bin/$1;
 vim ~/bin/$1
