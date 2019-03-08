@@ -94,9 +94,11 @@ echo "Installing zsh-autoSuggestions";
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions;
 git config --global user.name "Sai Ganesh";
 git config --global user.email "44020019+luckyganesh@users.noreply.github.com";
+
+# installing vim packages
 mkdir -p .vim/pack/plugins/start;
 git clone https://github.com/sickill/vim-monokai.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/airblade/vim-gitgutter.git
-git clone https://github.com/vim-airline/vim-airline.git;
-mv vim-airline vim-gitgutter nerdtree .vim/pack/plugins/start
+git clone https://github.com/vim-airline/vim-airline.git
+mv vim-airline vim-gitgutter nerdtree vim-monokai .vim/pack/plugins/start
