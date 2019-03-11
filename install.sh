@@ -22,9 +22,9 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-
+userName=echo "$(whoami)";
 #Make sure that your sudo config is yours.
-sudo chown -R saiganeb .config
+sudo chown -R $userName .config
 
 # Make sure we're using the latest Homebrew.
 brew update
@@ -84,11 +84,11 @@ echo "installing ack"
 brew install ack
 
 #installing node utils
-sudo npm install -g nyc
-sudo npm install -g readline-sync
-sudo npm install -g mocha
-sudo npm install -g prettier
-sudo npm install -g chalk
+npm install -g nyc
+npm install -g readline-sync
+npm install -g mocha
+npm install -g prettier
+npm install -g chalk
 
 echo "Installing zsh-autoSuggestions";
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions;
