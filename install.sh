@@ -24,7 +24,7 @@ fi
 
 userName=echo "$(whoami)";
 #Make sure that your sudo config is yours.
-sudo chown -R $userName .config
+sudo chown -R "$userName" .config
 
 # Make sure we're using the latest Homebrew.
 brew update
@@ -82,6 +82,9 @@ brew install watch
 
 echo "installing ack"
 brew install ack
+
+echo "installing hugo"
+brew install hugo
 
 #installing node utils
 npm install -g nyc
