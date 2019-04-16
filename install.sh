@@ -86,6 +86,9 @@ brew install ack
 echo "installing hugo"
 brew install hugo
 
+echo "installin heroku"
+brew tap heroku/brew && brew install heroku
+
 #installing node utils
 npm install -g nyc
 npm install -g readline-sync
