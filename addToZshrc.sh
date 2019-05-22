@@ -1,7 +1,7 @@
 #! /bin/zsh
 
-touch ~/bin/data
-vim ~/bin/data
-cat ~/bin/data | cat >> ~/.zshrc
-rm ~/bin/data
+touch ~/bin/data.sh
+vim ~/bin/data.sh
+cat ~/bin/data.sh | cat >> ~/.zshrc
+rm ~/bin/data.sh
 source ~/.zshrc
